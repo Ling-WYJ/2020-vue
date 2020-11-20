@@ -7,7 +7,7 @@
         </head>
         <body>
             <div id="app">
-                {{message}} {{name}} <!--文本查值-->
+                {{message}} {{name}} <!--文本插值-->
             </div>
             <script type="text/javascript">
             var app=new Vue(
