@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+        </head>
+        <body>
+            <div id="app">
+                {{a}} <!--文本插值-->
+            </div>
+            <script type="text/javascript">
+            var data={a:1};
+            var vm=new Vue(
+                {
+                  el:'#app',//元素：id选择器
+                  data:data
+                }
+            );
+            /*
+            data.a='hi...new...'
+            vm.a='test'
+            data.a==test.a
+            */
+            
+            vm.$watch('a',function(newVal,oldVal){
+                console.log(newVal,oldVal);
+            })
+            vm.$data.a='test...'
+            </script>
+        </body>
+        </html>
