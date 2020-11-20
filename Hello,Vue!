@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="vue.js" type="text/javascript" charset="utf-8"></script>
+        </head>
+        <body>
+            <div id="app">
+                {{message}} {{name}} <!--文本查值-->
+            </div>
+            <script type="text/javascript">
+            var app=new Vue(
+                {
+                  el:'#app',//元素：id选择器
+                  data:{
+                      message:'Hello Vue!',
+                      name:'Vue'
+                  }//保存数据，初始化赋值
+                }
+            );
+            </script>
+        </body>
+        </html>
